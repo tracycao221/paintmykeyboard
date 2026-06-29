@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { longTailPages, longTailPath } from "@/data/long-tail";
 import { siteConfig } from "@/data/site";
 
 export const dynamic = "force-static";
@@ -30,9 +31,15 @@ const routes: Array<{
   { path: "/disclosure", changeFrequency: "monthly", priority: 0.3 }
 ];
 
+const longTailRoutes = longTailPages.map((page) => ({
+  path: longTailPath(page),
+  changeFrequency: "weekly" as const,
+  priority: page.section === "guides" ? 0.74 : 0.7
+}));
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const seen = new Set<string>();
-  return routes
+  return [...routes, ...longTailRoutes]
     .map((route) => ({
       url: `${siteConfig.domain}${route.path}`,
       lastModified: new Date(),

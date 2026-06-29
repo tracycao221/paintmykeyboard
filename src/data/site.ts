@@ -20,6 +20,12 @@ export const siteConfig: SiteConfig = {
     `${gameConfig.name} official wiki`,
     `${gameConfig.name} guide`,
     `${gameConfig.name} calculator`,
+    "custom keyboard",
+    "keyboard painting",
+    "keyboard color ideas",
+    "RGB keyboard",
+    "aesthetic keyboard",
+    "keyboard design ideas",
     "Roblox codes",
     "Roblox tier list"
   ],
@@ -51,6 +57,8 @@ export const siteConfig: SiteConfig = {
       items: [
         { label: "Wiki Hub", href: "/wiki", description: "Entity pages for items, units, maps, clans, or systems." },
         { label: "Guides", href: "/guides", description: "Beginner, farming, boss, and progression paths." },
+        { label: "Color Ideas", href: "/guides/keyboard-color-ideas", description: "Custom keyboard colors, RGB themes, and aesthetic layouts." },
+        { label: "FAQ", href: "/guides/faq", description: "Quick answers for design, painting, and upgrade questions." },
         { label: "Trello/Discord", href: "/trello", description: "Official board, Discord, and wiki status." }
       ]
     },
@@ -177,6 +185,54 @@ export const guideClusters: LinkCard[] = [
     href: "/guides/keyboard",
     eyebrow: "Guide",
     description: "Plan bigger keyboard progress after checking cash pace, upgrade costs, and expansion value."
+  },
+  {
+    title: "Custom keyboard ideas",
+    href: "/guides/custom-keyboard",
+    eyebrow: "Long-tail guide",
+    description: "Plan a custom keyboard theme that can grow with paints, upgrades, and expansion."
+  },
+  {
+    title: "Keyboard painting guide",
+    href: "/guides/keyboard-painting",
+    eyebrow: "Long-tail guide",
+    description: "Paint keys in cleaner passes while keeping cash and upgrade goals in view."
+  },
+  {
+    title: "Keyboard color ideas",
+    href: "/guides/keyboard-color-ideas",
+    eyebrow: "Long-tail guide",
+    description: "Compare pastel, neon, RGB, gradient, and high-contrast keyboard color ideas."
+  },
+  {
+    title: "RGB keyboard guide",
+    href: "/guides/rgb-keyboard",
+    eyebrow: "Long-tail guide",
+    description: "Build RGB-style rows, gradients, and neon accents without making the board messy."
+  },
+  {
+    title: "Aesthetic keyboard ideas",
+    href: "/guides/aesthetic-keyboard",
+    eyebrow: "Long-tail guide",
+    description: "Use pastel, minimalist, cozy, neon, or gradient styles for a cleaner keyboard theme."
+  },
+  {
+    title: "Keyboard design ideas",
+    href: "/guides/keyboard-design-ideas",
+    eyebrow: "Long-tail guide",
+    description: "Use rows, borders, center highlights, and expansion-friendly layout patterns."
+  },
+  {
+    title: "Painting tips",
+    href: "/guides/painting-tips",
+    eyebrow: "Tips",
+    description: "Progress faster by matching painting choices to cash, paint, roller, and expansion goals."
+  },
+  {
+    title: "FAQ",
+    href: "/guides/faq",
+    eyebrow: "FAQ",
+    description: "Answers for custom keyboards, keyboard painting, colors, RGB themes, and upgrades."
   }
 ];
 
@@ -198,6 +254,18 @@ export const wikiCards: LinkCard[] = [
     href: "/wiki/cash",
     eyebrow: "Wiki",
     description: "Learn the confirmed cash loop and how it connects to bigger keyboard progress."
+  },
+  {
+    title: "Custom keyboard",
+    href: "/wiki/custom-keyboard",
+    eyebrow: "Wiki",
+    description: "Define custom keyboard terms and how design choices connect to game progression."
+  },
+  {
+    title: "RGB keyboard",
+    href: "/wiki/rgb-keyboard",
+    eyebrow: "Wiki",
+    description: "Explain RGB-style themes, gradients, neon accents, and source-safe paint notes."
   }
 ];
 
